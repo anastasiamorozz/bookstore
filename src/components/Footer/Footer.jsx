@@ -1,14 +1,14 @@
 import React from 'react';
 import './Footer.css';
 
-import logo from '../../assets/icons/logo.png';
-import phone from '../../assets/icons/phone.png';
-import mail from '../../assets/icons/mail.png';
-import location from '../../assets/icons/location.png';
-import instagram from '../../assets/icons/insta.png';
-import facebook from '../../assets/icons/facebook.png';
-import twitter from '../../assets/icons/twitter.png';
-import telegram from '../../assets/icons/telegram.png';
+import logo from '../../assets/icons/logo.svg';
+import phone from '../../assets/icons/phone.svg';
+import mail from '../../assets/icons/mail.svg';
+import location from '../../assets/icons/location.svg';
+import instagram from '../../assets/icons/insta.svg';
+import facebook from '../../assets/icons/facebook.svg';
+import twitter from '../../assets/icons/twitter.svg';
+import telegram from '../../assets/icons/telegram.svg';
 
 function Footer() {
     return (

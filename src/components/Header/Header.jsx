@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import './Header.css';
 
-import favorite_border from '../../assets/icons/favorite_border.png';
-import shopping_cart from '../../assets/icons/shopping_cart.png';
-import user from '../../assets/icons/user.png';
-import close_bold from '../../assets/icons/close-bold.png';
-import burger from '../../assets/icons/burger.png';
-import local_shipping from '../../assets/icons/local_shipping.png';
-import settings_phone from '../../assets/icons/settings_phone.png';
-import logo from '../../assets/icons/logo.png';
-import close_bold_red from '../../assets/icons/close-bold-red.png';
-import search from '../../assets/icons/search.png';
+import favorite_border from '../../assets/icons/favorite_border.svg';
+import shopping_cart from '../../assets/icons/shopping_cart.svg';
+import user from '../../assets/icons/user.svg';
+import close_bold from '../../assets/icons/close-bold.svg';
+import burger from '../../assets/icons/burger.svg';
+import local_shipping from '../../assets/icons/local_shipping.svg';
+import settings_phone from '../../assets/icons/settings_phone.svg';
+import logo from '../../assets/icons/logo.svg';
+import close_bold_red from '../../assets/icons/close-bold-red.svg';
+import search from '../../assets/icons/search.svg';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
