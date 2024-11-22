@@ -31,7 +31,7 @@ function Header() {
       { label: "Усі" },
       { label: "Паперові книги" },
       { label: "Аудіокниги" },
-      { label: "Улектронні книги" }
+      { label: "Електронні книги" }
     ];
 
     const handleClear = () => {

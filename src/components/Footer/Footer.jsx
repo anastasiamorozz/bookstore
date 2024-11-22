@@ -22,7 +22,7 @@ function Footer() {
                 <div className="footer-links">
                     <div className="for-clients">
                         <ul>
-                            <p className='text2'>Клієнтам</p>
+                            <h2 className='text2'>Клієнтам</h2>
                             <li className="text4">Вхід до кабінету</li>
                             <li className="text4">Про нас</li>
                             <li className="text4">Доставка та оплата</li>
@@ -35,7 +35,7 @@ function Footer() {
 
                     <div className="contacts">
                         <ul>
-                            <p className='text2'>Контактна інформація</p>
+                            <h2 className='text2'>Контактна інформація</h2>
                             <li className="text4"><img src={phone} alt="Phone" /><p>0-800-333-563</p></li>
                             <li className="text4"><img src={mail} alt="Mail" /><p>BookTime@ukr.net</p></li>
                             <li className="text4"><img src={location} alt="Location" /><p>61051 м.Харків вул. Котельниківська 4</p></li>
