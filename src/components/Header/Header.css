@@ -102,7 +102,7 @@
 
 .type-choose-button{
   min-width: 180px;
-  max-height: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;  
@@ -264,6 +264,7 @@
 
   .main-header-content {
     padding: 0 10px;
+    align-items: center;
   }
 
   .user-pannel-buttons {
