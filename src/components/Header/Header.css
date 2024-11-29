@@ -26,10 +26,22 @@
 }
 
 .burger-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+  transition: transform 0.3s ease;  
+}
+
+.burger-icon img {
+  transition: opacity 0.3s ease; /* Плавна зміна іконки */
+}
+
+.burger-icon.open {
+  transform: rotate(180deg); /* Обертання кнопки при відкритті */
 }
 
 .menu-content {
@@ -100,15 +112,24 @@
   padding: 0;
 }
 
-.type-choose-button{
+.type-choose-button {
   min-width: 180px;
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   border: solid 1px;
   border-radius: 20px;
+  background-color: transparent; /* Початково прозорий */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавна зміна кольорів */
+  cursor: pointer; /* Курсор при наведенні */
 }
+
+.type-choose-button:hover {
+  background-color: black; /* Колір заливки на ховері */
+  color: white; /* Колір тексту при ховері */
+}
+
 
 .search-input {
   width: 100%;

@@ -43,9 +43,16 @@ function Header() {
             <div className="top-header">
                 <div className="header-content">
                     <div className="burger-menu">
-                        <div className="burger-icon" onClick={toggleMenu}>
-                            {isOpen ? <img src={close_bold}></img> : <img src={burger}></img>}
-                        </div>
+                    <div
+                        className={`burger-icon ${isOpen ? "open" : ""}`}
+                        onClick={toggleMenu}
+                        >
+                        <img
+                            src={isOpen ? close_bold : burger}
+                            alt="Menu Icon"
+                        />
+                    </div>
+
                         {isOpen && (
                             <div className="menu-content">
                             <a href="#!" className="menu-item">Меню</a>
