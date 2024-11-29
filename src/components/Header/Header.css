@@ -1,18 +1,22 @@
-.top-header, .main-header, .main-header-choose {
+.top-header,
+.main-header,
+.main-header-choose {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.top-header{
+.top-header {
   background-color: var(--color-4);
   color: var(--color-1);
   max-height: 86px;
 }
 
-.header-content, .main-header-content, .choose-type-buttons {
+.header-content,
+.main-header-content,
+.choose-type-buttons {
   display: flex;
-  max-width: 1024px; 
+  max-width: 1024px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +37,7 @@
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
-  transition: transform 0.3s ease;  
+  transition: transform 0.3s ease;
 }
 
 .burger-icon img {
@@ -70,30 +74,29 @@
 
 /*Деталі*/
 
-.delivery-title, .phone-title{
+.delivery-title,
+.phone-title {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-
-.contact-title{
+.contact-title {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width:178px;
-  gap:6px;
+  max-width: 178px;
+  gap: 6px;
 }
 
-.contact-title p{
+.contact-title p {
   margin: 0;
   font-weight: 100;
 }
 
 /*Головний хедер*/
 
-.main-header-content{
-  
+.main-header-content {
 }
 
 .user-pannel-buttons {
@@ -105,7 +108,7 @@
 .header-button {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
   border: none;
   background: none;
   cursor: pointer;
@@ -113,7 +116,7 @@
 }
 
 .type-choose-button {
-  min-width: 180px;
+  width: 180px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -130,7 +133,6 @@
   color: white; /* Колір тексту при ховері */
 }
 
-
 .search-input {
   width: 100%;
   max-width: 488px;
@@ -142,8 +144,9 @@
   padding: 10px 20px;
 }
 
-.main-header, .main-header-content {
-    /* align-items: stretch; Дозволяє дочірнім елементам займати доступну висоту */
+.main-header,
+.main-header-content {
+  /* align-items: stretch; Дозволяє дочірнім елементам займати доступну висоту */
 }
 
 .search-wrapper {
@@ -158,30 +161,31 @@
 
 } */
 
-.search-icon, .clear-icon {
+.search-icon,
+.clear-icon {
   position: absolute;
-  display:flex;
+  display: flex;
   max-height: 25px;
   top: 50%;
-  width:42px;
+  width: 42px;
   transform: translateY(-50%);
   pointer-events: none;
 }
 
-.search-icon{
+.search-icon {
   right: 20px;
   justify-content: left;
 }
 
 .clear-icon {
   align-items: center;
-  right: 62px; 
+  right: 62px;
   justify-content: space-between;
-  font-size:25px;
+  font-size: 25px;
   color: #646464;
   cursor: pointer;
   pointer-events: auto;
-  p{
+  p {
     padding-bottom: 2px;
   }
 }
@@ -193,10 +197,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2); 
-  visibility: hidden; 
-  pointer-events: none; 
-  z-index: -1; 
+  background: rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .overlay.active {
@@ -204,8 +208,12 @@
 }
 
 .search-input:focus {
-  outline: none; 
+  outline: none;
   box-shadow: none;
+}
+
+.mini-cart{
+  display:none;
 }
 
 /* Медіазапити для мобільних пристроїв */
@@ -216,17 +224,26 @@
     text-align: center;
     position: relative;
     height: 142px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
+    
   }
 
-
-  .search-input{
-    min-width:none;
-    width:92%;
-    margin: 16px;
+  .header-content{
+    width: 90%;
   }
 
-  .delivery-title, .contact-title {
+  .mini-cart{
+    display:flex;
+  }
+
+  .search-input {
+    min-width: none;
+    width: 100%;
+    /* margin: 16px;  */
+  }
+
+  .delivery-title,
+  .contact-title {
     display: none;
   }
 
@@ -236,16 +253,16 @@
   }
 
   .search-wrapper {
-    width: 100%;
-    margin: 20px;
+    width: 90%;
+    /* margin: 20px; */
     max-width: none;
     position: absolute;
     /* top: 15%; */
-    transform: translateY(-150%);
+    transform: translateY(-170%);
     /* width: 347px; */
   }
 
-  .user-pannel-buttons .header-button:not(.cart-button) {
+  .user-pannel-buttons .header-button {
     display: none;
   }
 
@@ -256,20 +273,21 @@
   }
 
   .type-choose-button {
-    width: 100%;
+    width: 90%;
     /* padding:20px; */
   }
 
-  .cart-button{
-    position: absolute;
-    padding-right: 25px;
-    top:25px;
-    right: 0;
-
-    span{
-      display:none;
-    }
+  .burger-icon{
   }
+  .burger-icon {
+      left: 25px;
+  }
+
+
+  .cart-button span {
+      display: none;
+    }
+  
 
   /* .menu-content{
     width:100%
@@ -282,6 +300,8 @@
     justify-content: space-between;
     align-items: center;
   }
+
+
 
   .main-header-content {
     padding: 0 10px;

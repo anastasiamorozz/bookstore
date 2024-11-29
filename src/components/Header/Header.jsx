@@ -74,6 +74,10 @@ function Header() {
                         </div>
                         <p class="text5-regular">Без вихідних, з 9:00 до 20:00</p>
                     </div>
+
+                    <div className="mini-cart">
+                        <a><img src={shopping_cart}></img></a>
+                    </div>
                 </div>
             </div>
 
