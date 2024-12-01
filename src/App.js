@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <MainBanner />
+      <MainBanner />
       <NewBooks/>
       <AuthorBanner />
-      <DiscountBanner/> */}
-      {/* <Footer/> */}
+      <DiscountBanner/> 
+      <Footer/>
     </div>
   );
 }

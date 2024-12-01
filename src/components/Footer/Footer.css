@@ -67,5 +67,34 @@ li {
 
 /* Медіа-запит для мобільних пристроїв */
 @media (max-width: 768px) {
+    footer{
+        padding: 15px;
+    }
 
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-rights{
+        display: none;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap: 40px;
+    }
+
+    .social{
+        order: 1;
+        width: 175px;
+    }
+
+    .contacts{
+        order: 2;
+    }
+
+    .for-clients{
+        order: 3;
+    }
 }

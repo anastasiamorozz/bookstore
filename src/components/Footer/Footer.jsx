@@ -16,7 +16,7 @@ function Footer() {
             <div className="footer-content">
                 <div className="footer-logo">
                     <a><img src={logo} alt="Logo" /></a>
-                    <p>©2024BookTime.com.All rights reserved.</p>
+                    <p className='footer-rights'>©2024BookTime.com.All rights reserved.</p>
                 </div>
 
                 <div className="footer-links">
@@ -43,7 +43,7 @@ function Footer() {
                     </div>
 
                     <div className="social">
-                        <p className='text2'>Ми в соц мережах:</p>
+                        <p className='text2'>Ми в соцмережах:</p>
                         <div className="social-links">
                             <img src={instagram} alt="Instagram" />
                             <img src={facebook} alt="Facebook" />
