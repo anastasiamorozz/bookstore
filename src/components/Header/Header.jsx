@@ -11,6 +11,10 @@ import settings_phone from '../../assets/icons/settings_phone.svg';
 import logo from '../../assets/icons/logo.svg';
 import close_bold_red from '../../assets/icons/close-bold-red.svg';
 import search from '../../assets/icons/search.svg';
+import instagram from '../../assets/icons/insta-white.svg';
+import facebook from '../../assets/icons/facebook-white.svg';
+import twitter from '../../assets/icons/twitter-white.svg';
+import telegram from '../../assets/icons/telegram-white.svg';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,26 +47,69 @@ function Header() {
             <div className="top-header">
                 <div className="header-content">
                     <div className="burger-menu">
-                    <div
-                        className={`burger-icon ${isOpen ? "open" : ""}`}
-                        onClick={toggleMenu}
-                        >
-                        <img
-                            src={isOpen ? close_bold : burger}
-                            alt="Menu Icon"
-                        />
-                    </div>
+                        <div
+                            className={`burger-icon ${isOpen ? "open" : ""}`}
+                            onClick={toggleMenu}
+                            >
+                            <img
+                                src={isOpen ? close_bold : burger}
+                                alt="Menu Icon"
+                            />
+                        </div>
 
+                        
                         {isOpen && (
-                            <div className="menu-content">
-                            <a href="#!" className="menu-item">Меню</a>
-                            <a href="#!" className="menu-item">Меню</a>
-                            <a href="#!" className="menu-item">Меню</a>
-                            <a href="#!" className="menu-item">Меню</a>
-                            <a href="#!" className="menu-item">Меню</a>
+                            <div className="menu">
+                                <div className="menu-content">
+                                    <a href="#!" className="menu-item">Меню</a>
+                                    <a href="#!" className="menu-item">Меню</a>
+                                    <a href="#!" className="menu-item">Меню</a>
+                                    <a href="#!" className="menu-item">Меню</a>
+                                    <a href="#!" className="menu-item">Меню</a>
+                                </div>
+
+                                <div className="menu-content-mobile">
+                                    <div className="login-mobile">
+                                        <a href="#!" class='text3'>Увійти</a>|<a href="#!" class='text3'>Зареєструватися</a>
+                                    </div>
+
+                                    <div className="menu-list">
+                                        <a href="#!" className="menu-item">Меню</a>
+                                        <a href="#!" className="menu-item">Меню</a>
+                                        <a href="#!" className="menu-item">Меню</a>
+                                        <a href="#!" className="menu-item">Меню</a>
+                                        <a href="#!" className="menu-item">Меню</a>
+                                    </div>
+
+                                    <div className="contacts-mobile">
+                                        <div className="">
+                                            <div className="phone-title">
+                                                <span><img src={settings_phone}></img></span> <div class="text2">0-800-333-563</div>
+                                            </div>
+                                            <p class="text5-regular">Без вихідних, з 9:00 до 20:00</p>
+                                        </div>
+
+                                        <div className="social">
+                                            <p className='text2'>Ми в соц мережах</p>
+                                            <div className="mobile-social-links">
+                                                <img src={instagram} alt="Instagram" />
+                                                <img src={facebook} alt="Facebook" />
+                                                <img src={twitter} alt="Twitter" />
+                                                <img src={telegram} alt="Telegram" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="mobile-delivery-title">
+                                        <span><img src={local_shipping}></img></span> <p class="text2">Безкоштовна доставка для замовлення від 500 грн!</p>
+                                    </div>
+                                </div>
+
+                                
                             </div>
                         )}
                     </div>
+
 
                     <div className="delivery-title">
                         <span><img src={local_shipping}></img></span> <p class="text2">Безкоштовна доставка для замовлення від 500 грн!</p>
@@ -78,7 +125,10 @@ function Header() {
                     <div className="mini-cart">
                         <a><img src={shopping_cart}></img></a>
                     </div>
+
                 </div>
+
+            
             </div>
 
             <div className="main-header">
