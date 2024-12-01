@@ -249,6 +249,14 @@
   justify-content: space-between;
 }
 
+.mobile-social{
+  display:flex;
+  flex-direction: column;
+  width: 331px;
+  height: 80px;
+  justify-content: space-between;
+}
+
 .mobile-delivery-title{
   display:flex;
   align-items: center;
@@ -273,6 +281,10 @@
     
   }
 
+  .burger-menu{
+    position: static;
+  }
+
   .header-content{
     width: 90%;
   }
@@ -284,7 +296,7 @@
   .menu-content-mobile{
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 0;
     background-color: var(--color-4);

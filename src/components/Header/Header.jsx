@@ -89,7 +89,7 @@ function Header() {
                                             <p class="text5-regular">Без вихідних, з 9:00 до 20:00</p>
                                         </div>
 
-                                        <div className="social">
+                                        <div className="mobile-social">
                                             <p className='text2'>Ми в соц мережах</p>
                                             <div className="mobile-social-links">
                                                 <img src={instagram} alt="Instagram" />
